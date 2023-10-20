@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;                 /* Horizontally center the container */
+    top: 50%;                       /* Position 50% from top */
+    transform: translateY(-50%);    /* Vertically center using translateY */
+    overflow: hidden;               /* Hide the overflow along both x and y axes */
+    border-radius: 170px 170px 0 0;
+}
+
+.content {
+    position: absolute;             /* Positions the element relative to its nearest positioned ancestor */
+    top: 0; left: 0;                /* Position to the top and left of the container */
+    width: 100%; height: 100%;      /* Set width & height of the element to cover its container's full width & height */
+    background-color: #e9e9e9;      
+    display: flex;                  /* Uses the Flexible Box Layout */
+    justify-content: center;        /* Horizontally centers the flex items */
+    align-items: center;            /* Vertically centers the flex items */
+    font-size: 2em;
+    z-index: 1;
+}
+
+.curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    cursor: ew-resize;  /* Cursor changes to horizontal resize style */
+    z-index: 2;
+}
+
+.curtain1 {
+    background-color: #333;
+}
+
+.curtain2 {
+    background-color: #555;
+}
+
+.curtain3 {
+    background-color: #777;
+}
+
+[data-image="content-image"] {
+    background-image: url('img/content.jpg');
+    background-size: cover; /* This will ensure the image covers the entire div */
+    background-position: center; /* This centers the image */
+}
+
+[data-image="curtain3-image"] {
+    background-image: url('img/layer1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+[data-image="curtain2-image"] {
+    background-image: url('img/layer2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+[data-image="curtain1-image"] {
+    background-image: url('img/layer3.jpg');
+    background-size: cover;
+    background-position: center;
+}

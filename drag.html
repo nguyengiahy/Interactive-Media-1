@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The head element contains meta-information and links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Curtain Drag Effect</title>
+
+    <!-- Links to the external stylesheet -->
+    <link rel="stylesheet" href="drag.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- "data-image" is an attribute to specify the associated image with a div -->
+        <!-- "data-max-percentage" is an attribute to specify the right boundary that each layer can be dragged to -->
+        <div class="content" data-image="content-image"></div>          
+        <div class="curtain curtain3" data-image="curtain3-image" data-max-percentage="0.7"></div>
+        <div class="curtain curtain2" data-image="curtain2-image" data-max-percentage="0.8"></div>
+        <div class="curtain curtain1" data-image="curtain1-image" data-max-percentage="0.9"></div>
+    </div>
+
+    <!-- Audio sound of the curtain sliding -->
+    <audio id="curtainSound" preload="auto">
+        <source src="sounds/door.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- External JS file that provides functionality for the drag effects -->
+    <script src="drag.js"></script>
+</body>
+</html>

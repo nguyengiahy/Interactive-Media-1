@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags to specify character set, viewport settings, and browser compatibility -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Document title -->
+    <title>Lily</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header section starts here -->
+    <header>
+
+        <!-- Main title for the page -->
+        <h1 class="big-title translate" data-speed="0.1">Good afternoon.</h1>       <!-- "translate" class and "data-speed" data attribute are for handling the parallax scrolling -->
+
+        <!-- Button with text "Explore" that links to another page (drag.html) -->
+        <a href="drag.html" class="custom-button-link">
+            <button class="custom-button">Explore</button>
+        </a>
+
+        <!-- Image wrappers for various positions -->
+        <!-- Window image wrapper -->
+        <div class="window-wrapper">
+            <img src="img/window.png" class="window translate" data-speed="-0.25" alt="">    <!-- "translate" class and "data-speed" data attribute are for handling the parallax scrolling -->
+        </div>
+        <!-- Top curtain image wrapper -->
+        <div class="top-wrapper">
+            <img src="img/top.png" class="top translate" data-speed="-0.2" alt="">      <!-- "translate" class and "data-speed" data attribute are for handling the parallax scrolling -->
+        </div>
+        <!-- Left curtain image wrapper -->
+        <div class="left-wrapper">
+            <img src="img/left.png" class="left translate" data-speed="0.4" alt="">     <!-- "translate" class and "data-speed" data attribute are for handling the parallax scrolling -->
+        </div>
+        <!-- Right curtain image wrapper -->
+        <div class="right-wrapper">
+            <img src="img/right.png" class="right translate" data-speed="0.4" alt="">   <!-- "translate" class and "data-speed" data attribute are for handling the parallax scrolling -->
+        </div>
+    </header>
+    <!-- Header section ends here -->
+
+    <!-- Main content section starts here -->
+    <section>
+
+        <!-- Shadow div for gradient color transitioning effect -->
+        <div class="shadow"></div>
+
+        <!-- Main content container -->
+        <div class="container">
+
+            <!-- "About" section with title and description -->
+            <div class="content opacity">
+                <h3 class="title">
+                    About
+                    <div class="border"></div>      <!-- For styling the underline of the "About" title -->
+                </h3>
+                <p class="text">"As the sun paints the afternoon sky with its warm, golden hues, my camera captures three enchanting portraits of flowers with different poetic beauty.The first, a close-up embrace with a flower's delicate petals, reveals an intimate connection. In the second, we find ourselves amidst a small vintage vase of flower  blooms by the window. Finally, the third image takes us on a journey with the rustic simplicity of flower clusters adorning boats during the festive Tet holiday in Vietnam"</p>
+            </div>
+
+            <!-- Image container for an illustrating picture -->
+            <div class="imgContainer opacity">
+                <img src="img/mee.jpg" alt="">
+            </div>
+        </div>  
+    </section>
+    <!-- Main content section ends here -->
+    
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
